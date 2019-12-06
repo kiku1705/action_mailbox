@@ -1,5 +1,5 @@
 class TestMailbox < ApplicationMailbox
   def process
-  	Comment.create(text:mail.decoded)
+  	Comment.create(text:mail.subject)
   end
 end
